@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Teste de Java Script</title>
+</head>
+<body>
+    <h1 id="titulo">Boa</h1>
+    <button onclick="mudartexto()">Mudar Texto</button>
+    <button onclick="mudartextodenovo()">Mudar Texto denovo</button>
+</body>
+</html>
+
+<script>
+    // comentarios
+    // alert ("Olá Mundo!")
+    // num1 = 20;
+    // alert (num1)
+    // document.write ("   <h1> Olá esta é minha primeira vez com JavaScript  <h1>")
+
+    function mudartexto(){
+        tituloVar = document.getElementById ('titulo')
+        tituloVar.innerText = "Texto Alterado pelo botão"
+    }
+
+    function mudartextodenovo(){
+        tituloVar = document.getElementById ('titulo')
+        tituloVar.innerText = "Este Texto foi mudado denovo pelo botão"
+    }
+
+</script>
